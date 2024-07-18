@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Ciro</title>
+  <!--=============== FAVICON ===============-->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/pwa/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/pwa/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/pwa/favicon-16x16.png">
+  <link rel="manifest" href="assets/pwa/site.webmanifest">
+  <!--=============== REMIX ICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <!--=============== HEADER ===============-->
+  <header class="profile container">
+    <div class="start_options">
+
+  
+              
+    <!-- Theme button -->
+    <i class="ri-moon-line change-theme" id="theme-button"></i>
+    
+  </div>
+    <div class="profile__container grid">
+      <div class="profile__data">
+        <div class="profile__border">
+          <div class="profile__perfil">
+            <img src="assets/Diseño sin título.png" alt="">
+          </div>
+        </div>
+
+        <h2 class="profile__name">Ciro Bianchimani</h2>
+        <h3 class="profile__profession">JavaScript developer & Personal Trainer from Argentina. 💻&💪</h3>
+
+        <ul class="profile__social">
+          <a href="https://www.instagram.com/profecirob/" target="_blank" class="profile__social-link">
+            <i class="ri-instagram-line"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/cirobianchimani/" target="_blank" class="profile__social-link">
+            <i class="ri-linkedin-box-line"></i>
+          </a>
+          <a href="https://github.com/Cbianchc" target="_blank" class="profile__social-link">
+            <i class="ri-github-line"></i>
+          </a>
+        </ul>
+      </div>
+
+      
+
+      <div class="profile__info grid">
+        <div class="profile__info-group">
+          <h3 class="profile__info-number">BIRTHDAY</h3>
+          <p class="profile__info-description">
+            12-nov-1985
+          </p>
+        </div>
+        <div class="profile__info-group">
+          <h3 class="profile__info-number">LOCATION</h3>
+          <p class="profile__info-description">
+            Capital Federal <br> Buenos Aires <br> Argentina
+          </p>
+        </div>
+        <div class="profile__info-group">
+          <h3 class="profile__info-number">STATUS</h3>
+          <p class="profile__info-description">Freelance</p>
+        </div>
+      </div>
+
+      <!--                              traductor     -->
+      <!-- <div class="profile__buttons">
+        <div class="traductor">
+          <span class="idiomas-banderita">Esp 
+            <img class="banderita" src="./assets/banderas/espana.png" alt="esp">
+          </span>
+        
+          <input type="checkbox" class="traducir-cv">
+    
+          <span class="idiomas-banderita">Eng
+            <img class="banderita" src="./assets/banderas/reino-unido.png" alt="eng">
+          </span>
+        </div>
+      </div> -->
+
+      <div class="profile__buttons">
+        <a download="" href="assets/Ciro CV 2024.pdf" class="button">
+          Download CV <i class="ri-download-line"></i>
+        </a>
+
+        <div class="profile__buttons-small">
+          <!-- Insert a real number plus country code -->
+          <a href="https://api.whatsapp.com/send?phone=5491165026238&text=Hi, you're great!" target="_blank" class="button button__small button__gray">
+            <i class="ri-whatsapp-line"></i>
+          </a>
+          <!-- Insert your brand name or profile -->
+          <a href="mailto:bianchimaniciroe@gmail.com" target="_blank" class="button button__small button__gray">
+            <i class="ri-mail-line"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--=============== MAIN ===============-->
+  <main class="main">
+    <section class="filters container">
+      <!--=============== FILTERS TABS ===============-->
+      <ul class="filters__content">
+        <button class="filters__button filter-tab-active" data-target="#projects">
+          Projects
+        </button>
+        <button class="filters__button" data-target="#skills">
+          Skills
+        </button>
+        <button class="filters__button " data-target="#others">
+          Others
+        </button>
+      </ul>
+
+      <div class="filters__sections">
+        <!--=============== PROJECTS ===============-->
+        <div class="projects__content grid filters__active" data-content id="projects">
+          <article id="entrenaflix" class="projects__card">
+            <img src="assets/proyects/netfimgrect.png" alt="" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Next.js +TypeScript + Tailwind + MongoDB + Prisma</span>
+                <span class="projects__subtitle">
+                  <br>USER: test@gmail.com <br> PAS: 123456
+                </span>
+                <h3 class="projects__title">Netflix Clone for fitness</h3>
+                <a title="ver deploy" 
+                   href="https://entrenaflix01.vercel.app/" 
+                   target="_blank"
+                   class="projects__button button button__small">
+                  <i  class="ri-macbook-line"></i>
+                </a>
+                <a title="ver codigo" 
+                   href="https://github.com/Cbianchc/entrenaflix01" 
+                   target="_blank"
+                   class="projects__button button button__small">
+                  <i  class="ri-github-line"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article id="Spotify" class="projects__card">
+            <img src="assets/proyects/cloneSpotifimgrect.png" alt="" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Next.js + typescript + tailwind + Supabase + PostgreSQL</span>
+                <span class="projects__subtitle">
+                  <br>USER: prueba@gmail.com <br> PAS: 123456
+                </span>
+                <h3 class="projects__title">Clon Spotify</h3>
+                <a title="ver deploy" 
+                   href="https://spotify-clone-mxdchs2bg-cbianchc.vercel.app/" 
+                   target="_blank"
+                   class="projects__button button button__small">
+                  <i  class="ri-macbook-line"></i>
+                </a>
+                <a title="ver codigo" 
+                   href="https://github.com/Cbianchc/spotify-clone" 
+                   target="_blank"
+                   class="projects__button button button__small">
+                  <i  class="ri-github-line"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article id="Movie_review_api" class="projects__card">
+            <img src="https://github.com/Cbianchc/Movie_review_api/raw/main/frontend/public/java_react_api1.png" alt="" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">
+                  Java - SpringBoot - Lombok - MongoDB - React.js - Material-UI - Bootstrap - Axios              </span>
+                <span class="projects__subtitle">
+                </span>
+                <h3 class="projects__title">Movie Review</h3>
+                <a title="ver codigo" 
+                   href="https://github.com/Cbianchc/Movie_review_api" 
+                   target="_blank"
+                   class="projects__button button button__small">
+                  <i  class="ri-github-line"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article id="barberia-alura" class="projects__card">
+            <!-- (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+            <img src="assets/proyects/aluraimgrect.jpg" alt="" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Alura Latam</span>
+                <h3 class="projects__title">Proyecyo final - Barberia Alura</h3>
+                <a title="ver deploy" 
+                   href="https://barberia-alura-proyecto-final.netlify.app/" 
+                   target="_blank" 
+                   class="projects__button button button__small">
+                  <i class="ri-macbook-line"></i>
+                </a>
+                <!-- <a title="ver deploy" 
+                   href="https://barberia-alura-proyecto-final.netlify.app/" 
+                   target="_blank"
+                   class="projects__button button button__small">
+                  <i  class="ri-github-fill"></i>
+                </a> -->
+              </div>
+            </div>
+          </article>
+
+          <article id="divisas-java" class="projects__card">
+            <img src="assets/proyects/calcjavaimg.png" alt="" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Oracle Next Education</span>
+                <h3 class="projects__title">Convertidor de divisas</h3>
+                <a title="ver deploy" 
+                   href="https://github.com/Cbianchc/conversorMedio" 
+                   target="_blank"
+                   class="projects__button button button__small">
+                  <i  class="ri-github-fill"></i>
+                </a>
+                <a title="ver video" 
+                   href="https://youtu.be/_6uVslY4Uo4" 
+                   target="_blank"
+                   class="projects__button button button__small">
+                  <i  class="ri-youtube-line"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article id="app-juegos" class="projects__card">
+            <img src="assets/proyects/juegos1rectimg.png" alt="" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Vite.JS + Firebase</span>
+                <h3 class="projects__title">Fitness Games</h3>
+                <a title="ver deploy" 
+                   href="https://entrenapp.vercel.app/" 
+                   target="_blank"
+                   class="projects__button button button__small">
+                  <i  class="ri-macbook-line"></i>
+                </a>
+                <a title="ver codigo" 
+                   href="https://github.com/Cbianchc/Entrenapp" 
+                   target="_blank"
+                   class="projects__button button button__small">
+                  <i  class="ri-github-line"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article id="platzi-final" class="projects__card">
+            <img src="assets/proyects/platzimgrect.png" alt="" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Juego con JavaScript</span>
+                <h3 class="projects__title">Proyecto final Platzi - Full stack</h3>
+                <a title="ver deploy" 
+                   href="https://mokeponcanvas.netlify.app/" 
+                   target="_blank"
+                   class="projects__button button button__small">
+                  <i  class="ri-macbook-line"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article id="ticmas-frontend" class="projects__card">
+            <img src="assets/proyects/ticmasimgrect.png" alt="" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">web CV con HTML CSS JS</span>
+                <h3 class="projects__title">Proyecto final Ticmas - Desarrollo frontend basico</h3>
+                <a title="ver deploy" 
+                   href="https://cv-ticmas-checkbox-3.netlify.app/" 
+                   target="_blank"
+                   class="projects__button button button__small">
+                  <i  class="ri-macbook-line"></i>
+                </a>
+                <a title="ver codigo" 
+                   href="https://github.com/Cbianchc/ticmascv-final" 
+                   target="_blank"
+                   class="projects__button button button__small">
+                  <i  class="ri-github-line"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+          
+          <article id="clinica-alura" class="projects__card">
+            <img src="/assets/proyects/alurabackcertificado.png" alt="" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">API rest - Mysql + Java17 + Spring Security 6 + Token JWT + Lombok + h2database + hibernate + postman</span>
+                <h3 class="projects__title">Alura Latam JAVA Back end</h3> 
+                <a title="ver codigo" 
+                   href="https://github.com/Cbianchc/Spring3_Clinica_Alura" 
+                   target="_blank"
+                   class="projects__button button button__small">
+                  <i  class="ri-github-line"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+          <!-- Agregar mas proyectos -->
+          
+
+
+        </div>
+
+        <!--=============== SKILLS ===============-->
+        <div class="skills__content grid" data-content id="skills">
+          <div class="skills__area">
+            <h3 class="skills__title">Frontend</h3>
+
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="25px" alt="html5 logo"  />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="25px" alt="css3 logo"  />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="25px" alt="javascript logo"  />
+
+                    <h4 class="skills__name">HTML5 CSS3 JavaScript</h4>
+                    <span class="skills__level">Advance</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="25px" alt="react logo"  />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="25px" alt="nextjs logo"  />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" width="25px" alt="angularjs logo"  />
+
+                    <h3 class="skills__name">Framewoks & libs</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="25px" alt="bootstrap logo"  />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" width="25px" alt="materialui logo"  />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" width="25px" alt="tailwindcss logo"  />
+                    <h3 class="skills__name">Styles & Components</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="25px" alt="github logo"  />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="25px" alt="git logo"  />
+                    <h3 class="skills__name">Git & GitHub</h3>
+                    <span class="skills__level">Basic</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" width="25px" alt="photoshop logo"  />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" width="25px" alt="canva logo"  />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" width="25px" alt="figma logo"  />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" width="25px" alt="trello logo"  />
+                    <h3 class="skills__name">Ph Canva Figma Trello</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="skills__area">
+            <h3 class="skills__title">Backend</h3>
+
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" width="25px" alt="npm logo"  />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="25px" alt="nodejs logo"  />
+                    <h3 class="skills__name">Node.js & npm</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="25px" alt="mysql logo"  />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="25px" alt="postgresql logo"  />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" width="25px" alt="sqlite logo"  />
+                    <h3 class="skills__name">MySQL - Postgres - SQLite</h3>
+                    <span class="skills__level">Basic</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" width="25px" alt="firebase logo"  />
+
+                    <h3 class="skills__name">Firebase</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="25px" alt="java logo"  />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" width="25px" alt="spring logo"  />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tomcat/tomcat-original.svg" width="25px" alt="tomcat logo"  />
+
+                    <h3 class="skills__name">Java - SpringBoot</h3>
+                    <span class="skills__level">Basic</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" width="25px" alt="mongodb logo"  />
+                    <h3 class="skills__name">MongoDB</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!--=============== OTHERS ===============-->
+        <div class="skills__content grid" data-content id="others">
+          <div class="skills__area">  
+            <h3 class="skills__title">Code Related</h3>
+
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">HTML - CSS - JS Basico</h3>
+                    <span class="skills__level">Ticmas</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">JavaScript fullStack</h3>
+                    <span class="skills__level">Platzi</span>
+                  </div>
+                </div>
+
+                <div class="skills__group">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+  
+                    <div>
+                      <h3 class="skills__name">Full Stack dev en Java y Spring Boot 3</h3>
+                      <span class="skills__level">Alura Latam Oracle Next Aducation</span>
+                    </div>
+                  </div>
+
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">Desarrollo de Aplicaciones Moviles - Kotlin</h3>
+                    <span class="skills__level">Ticmas</span>
+                  </div>
+                </div>
+              </div>
+
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">Git & GitHub</h3>
+                    <span class="skills__level">Alura Latam Oracle Next Aducation</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">Programacion Orientada a Objetos</h3>
+                    <span class="skills__level">Argentina Programa</span>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__area">
+            <h3 class="skills__title">Soft Skills</h3>
+
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">BUSINESS AGILITY G5 - ONE</h3>
+                    <span class="skills__level">Alura Latam - Oracle Next Education</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">EMPRENDIMIENTO G5 - ONE</h3>
+                    <span class="skills__level">Alura Latam - Oracle Next Education</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">DESARROLLO PERSONAL G5 - ONE</h3>
+                    <span class="skills__level">Alura Latam - Oracle Next Education</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">Digitalizacion de empresas con herramientas de Google</h3>
+                    <span class="skills__level">Google Activate</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+
+                  <div>
+                    <h3 class="skills__name">Inglés nivel C1 Advanced - Certif.EF</h3>
+                    <span class="skills__level">Certificado EF Europeo - Reading & Listening</span>
+                    <span class="skills__level">Certificado CUI - Cert MCER</span>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+          
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!--=============== FOOTER ===============-->
+  <footer class="footer container">
+    <span class="footer__copy">
+      &#169; Ciro Bianchimani - todos los derechos e izquierdos reservados.
+    </span>
+  </footer>
+
+  <!--=============== SCROLLREVEAL ===============-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!--=============== MAIN JS ===============-->
+  <script src="main.js"></script>
+</body>
+
+</html>
